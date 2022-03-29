@@ -6,7 +6,9 @@ public class TaksimetreProgrami {
         Scanner input=new Scanner(System.in);
         System.out.println("Mesafeyi KM cinsinden giriniz:");
         int KM=input.nextInt();
-        double odemeTaksi=(10+2.2*KM);
+        int startPrice=10;
+        double perKm=2.2;
+        double odemeTaksi=(startPrice+perKm*KM);
         double taksimetre=(odemeTaksi<20)?20:odemeTaksi;
         System.out.println("Ödenecek tutar"+taksimetre);
     }
